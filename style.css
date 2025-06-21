@@ -1,0 +1,95 @@
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark gradient */
+  color: #f0f0f0;
+  animation: fadeInBody 2s ease-in-out;
+}
+
+.container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: slideIn 1.5s forwards 0.5s;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  opacity: 0.9;
+}
+
+/* Card Sections */
+.card {
+  background-color: rgba(0, 0, 0, 0.4); /* semi-dark overlay */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+  opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+    background-color: #000;
+  }
+  to {
+    opacity: 1;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
